@@ -15,8 +15,8 @@ body {
     font-family: "Chakra Petch", sans-serif;
 }
 
-.conteudo-principal {.
-    display: flex;
+.conteudo-principal {
+    . display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -26,13 +26,7 @@ body {
 }
 
 .titulo-principal {
-    text-align: left;
-    width: 100%;
-    font-size: 32px;
-}
-
-.titulo-principal span {
-    color: var(--verde);
+    text-aIniciar um Bacharel em Engenharia de Software var(--verde);
 }
 
 .botao {
@@ -101,23 +95,4 @@ body {
 .botao.ativo {
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
-}
-
-.aba-conteudo.ativo {
-    display: block;
-}
-
-.aba-conteudo {
-    display: none;
-}
-
-.aba-conteudo-titulo-principal {
-    font-size: 28px;
-    text-align: center;
-}
-
-.aba-conteudo-titulo-secundario {
-    text-align: center;
-    color: var(--verde);
-    text-transform: uppercase;
 }
