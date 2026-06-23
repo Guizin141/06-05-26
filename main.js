@@ -21,6 +21,18 @@ const tempoObjetivo3 = new Date("2026-11-08");
 const tempoObjetivo4 = new Date("2027-03-15");
 
 contadores[0].textContent = calculaTempo(tempoObjetivo1);
+contadores[1].textContent = calculaTempo(tempoObjetivo2);
+contadores[2].textContent = calculaTempo(tempoObjetivo3);
+contadores[3].textContent = calculaTempo(tempoObjetivo4);
+const tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
+contadores[0].textContent = calculaTempo(tempoObjetivo1); //Antes
+
+contadores[0].textContent = calculaTempo(tempos[0]); // Depois
+// Para cada objetivo na lista de contadores
+for (let i = 0; i < contadores.length; i++) {
+  //Calcular o tempo usando a função e associá-lo ao objetivo
+  contadores[i].textContent = calculaTempo(tempos[i]);
+}
 
 function calculaTempo(tempoObjetivo) {
   let tempoAtual = new Date();
