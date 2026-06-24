@@ -20,19 +20,7 @@ const tempoObjetivo2 = new Date("2027-03-02");
 const tempoObjetivo3 = new Date("2026-11-08");
 const tempoObjetivo4 = new Date("2027-03-15");
 
-contadores[0].textContent = calculaTempo(tempoObjetivo1);
-contadores[1].textContent = calculaTempo(tempoObjetivo2);
-contadores[2].textContent = calculaTempo(tempoObjetivo3);
-contadores[3].textContent = calculaTempo(tempoObjetivo4);
-const tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
-contadores[0].textContent = calculaTempo(tempoObjetivo1); //Antes
 
-contadores[0].textContent = calculaTempo(tempos[0]); // Depois
-// Para cada objetivo na lista de contadores
-for (let i = 0; i < contadores.length; i++) {
-  //Calcular o tempo usando a função e associá-lo ao objetivo
-  contadores[i].textContent = calculaTempo(tempos[i]);
-}
 function atualizaCronometro() {
   for (let i = 0; i < contadores.length; i++) {
     contadores[i].textContent = calculaTempo(tempos[i]);
@@ -52,14 +40,14 @@ function calculaTempo(tempoObjetivo) {
   let minutos = Math.floor(segundos / 60);
   let horas = Math.floor(minutos / 60);
   let dias = Math.floor(horas / 24);
+}
 
   segundos %= 60;
   minutos %= 60;
   horas %= 24;
-  
-  if (tempoFinal > 0) {
-  return (
-    dias +
+
+  return
+  dias +
     " dias " +
     horas +
     " horas " +
@@ -67,7 +55,3 @@ function calculaTempo(tempoObjetivo) {
     " minutos " +
     segundos +
     " segundos"
-  );
-} else {
-  return "Prazo Finalizado";
-}
