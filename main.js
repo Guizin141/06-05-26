@@ -32,9 +32,10 @@ contadif(tempoFinal > 0) {
     " minutos " +
     segundos +
     " segundos"
-  ); else }
-  {}
-  return "Prazo Finalizado";
+  ); else
+}
+{ }
+return "Prazo Finalizado";
 dores[2].textContent = calculaTempo(tempoObjetivo3);
 contadores[3].textContent = calculaTempo(tempoObjetivo4);
 
@@ -66,9 +67,10 @@ function calculaTempo(tempoObjetivo) {
   }
 
 }
-function comecaCronometro() {
+
   atualizaCronometro();
   setInterval(atualizaCronometro, 1000);
-}
+{
 
 comecaCronometro();
+}
