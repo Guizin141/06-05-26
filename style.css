@@ -93,19 +93,19 @@ body {
 }
 
 .contador-digito {
-  padding: 0 25px;
+  padding: 0 18px;
   text-align: center;
-  min-width: 140px;
+  min-width: 100px;
 }
 
 .contador-digito-numero {
-  font-size: 110px;
+  font-size: 80px;
   margin: 0;
 }
 
 .contador-digito-texto {
   color: var(--branco);
-  font-size: 30px;
+  font-size: 15px;
   margin: 0;
 }
 
